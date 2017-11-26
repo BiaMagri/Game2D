@@ -1171,7 +1171,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.14
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -19306,7 +19306,7 @@ MonoBehaviour:
     m_Bits: 256
   doorSound: {fileID: 8300000, guid: 08c5bac1d012998439175ef8f206a72d, type: 3}
   audioController: {fileID: 945421308}
-  fase: Fase4
+  fase: Ex4
 --- !u!212 &1406497089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24425,7 +24425,6 @@ MonoBehaviour:
   audioController: {fileID: 945421308}
   jumpSound: {fileID: 8300000, guid: 63eb5f34516188c408071dc343388226, type: 3}
   shootSound: {fileID: 8300000, guid: 8706f38659003004594f2bf4a98f1bc1, type: 3}
-  sceneName: Ex4
 --- !u!212 &1743400487
 SpriteRenderer:
   m_ObjectHideFlags: 0

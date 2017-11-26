@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource audioController;
 	public AudioClip jumpSound;
 	public AudioClip shootSound;
-	public string sceneName;
 
 	// Use this for initialization
 	void Start () {

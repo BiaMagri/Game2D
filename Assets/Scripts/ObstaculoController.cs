@@ -19,7 +19,7 @@ public class ObstaculoController : MonoBehaviour {
 	void Update () {
 		if (Physics2D.OverlapCircle (groundCheck.position ,0.1f, isObstaculo) || player.position.y < -30) {
 			animator.SetBool ("hit", true);
-			if (lifeCount.text.Equals("0")) {
+			if (lifeCount.text.Equals("1")) {
 				Application.LoadLevel("GameOver");
 			} else {
 				Vector3 newPosition = Vector3.zero;

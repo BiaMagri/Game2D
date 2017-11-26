@@ -35,7 +35,7 @@ public class InimigoController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag.Equals("Player")){
-			if (!lifeCount.text.Equals("0")) {
+			if (!lifeCount.text.Equals("1")) {
 				Vector3 newPosition = Vector3.zero;
 				lifeCount.text = "" + (System.Int32.Parse(lifeCount.text.ToString()) - 1);
 				newPosition.x = -32;
