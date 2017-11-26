@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Ex1 : MonoBehaviour {
 
+	public string scene;
+
 	// Use this for initialization
 	void Start () {
 		//Não esquecer de adicionar no Build Settings
@@ -15,7 +17,7 @@ public class Ex1 : MonoBehaviour {
 		bool start = Input.anyKeyDown;
 
 		if (start) {
-			SceneManager.LoadScene ("Fase1");
+			SceneManager.LoadScene (scene);
 		}
 	}
 }

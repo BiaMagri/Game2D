@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -14,15 +16,17 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource audioController;
 	public AudioClip jumpSound;
 	public AudioClip shootSound;
+	public string sceneName;
 
 	// Use this for initialization
 	void Start () {
+		PlayerPrefs.SetInt ("vida", 3);
 		//Debug.Log ("Hello");
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+		gameObject.GetComponent<BoxCollider2D> ().enabled = true;
 		bool walk = Input.GetButton ("Walk");
 		bool jump = Input.GetButtonDown ("Jump");
 		bool shoot = Input.GetButton ("Fire");
@@ -60,4 +64,5 @@ public class PlayerController : MonoBehaviour {
 		animator.SetBool ("walk", walk);
 		animator.SetBool ("slice", slice);
 	}
+
 }

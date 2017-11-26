@@ -17,10 +17,11 @@ public class CollectedController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(Physics2D.OverlapCircle(transform.position, 0.06f, isPlayer)){
+		if(Physics2D.OverlapCircle(transform.position, 0.1f, isPlayer)){
 			coinCount.text = "" + (System.Int32.Parse(coinCount.text.ToString()) + 1);
 			audioController.PlayOneShot (coinSound);
 			Destroy(gameObject);
 		}
 	}
+		
 }

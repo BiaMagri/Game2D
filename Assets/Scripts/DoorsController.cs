@@ -9,6 +9,7 @@ public class DoorsController : MonoBehaviour {
 	public LayerMask isPlayer;
 	public AudioClip doorSound;
 	public AudioSource audioController;
+	public string fase;
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +19,15 @@ public class DoorsController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		foundPlayer = Physics2D.OverlapCircle (transform.position ,0.4f, isPlayer);
+		if (fase.Equals ("End")) {
+			foundPlayer = Physics2D.OverlapCircle (transform.position, 0.6f, isPlayer);
+		} else {
+			foundPlayer = Physics2D.OverlapCircle (transform.position ,0.4f, isPlayer);
+		}
 
 		if (foundPlayer) {
 			audioController.PlayOneShot (doorSound);
-			SceneManager.LoadScene ("Fase2");
+			SceneManager.LoadScene (fase);
 		}
 
 	}

@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour {
 		Vector3 newPosition = Vector3.zero;
 
 		newPosition.x = Mathf.SmoothDamp (transform.position.x, playerTransform.position.x, ref velocity.x, smooth);
-		newPosition.y = Mathf.SmoothDamp (transform.position.y, playerTransform.position.y + 5f, ref velocity.y, smooth);
+		newPosition.y = Mathf.SmoothDamp (transform.position.y, playerTransform.position.y + 3f, ref velocity.y, smooth);
 		newPosition.z = transform.position.z;
 		transform.position = Vector3.Slerp(transform.position, newPosition, Time.time);
 	} 
