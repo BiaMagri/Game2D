@@ -14,6 +14,7 @@ public class MenuController : MonoBehaviour {
 	void Update () {
 
 		if (Input.anyKeyDown) {
+			PlayerPrefs.SetInt ("coins", 0);
 			SceneManager.LoadScene ("Ex0");
 		}
 	}

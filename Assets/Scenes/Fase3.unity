@@ -19307,6 +19307,7 @@ MonoBehaviour:
   doorSound: {fileID: 8300000, guid: 08c5bac1d012998439175ef8f206a72d, type: 3}
   audioController: {fileID: 945421308}
   fase: Ex4
+  coinCount: {fileID: 285209834}
 --- !u!212 &1406497089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24349,7 +24350,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1743400481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: -16, z: 0}
+  m_LocalPosition: {x: -25, y: -15, z: 0}
   m_LocalScale: {x: 1.5269194, y: 1.5269197, z: 1.5269197}
   m_Children:
   - {fileID: 945421310}

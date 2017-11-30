@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PlayerPrefs.SetInt ("vida", 3);
 		//Debug.Log ("Hello");
 	}
 

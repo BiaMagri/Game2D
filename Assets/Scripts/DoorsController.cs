@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorsController : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class DoorsController : MonoBehaviour {
 	public AudioClip doorSound;
 	public AudioSource audioController;
 	public string fase;
+	public Text coinCount;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +29,9 @@ public class DoorsController : MonoBehaviour {
 
 		if (foundPlayer) {
 			audioController.PlayOneShot (doorSound);
+			PlayerPrefs.SetInt ("coins", PlayerPrefs.GetInt("coins", 0) + System.Int32.Parse(coinCount.text));
+			Debug.Log ("Moedas: ");
+			Debug.Log (PlayerPrefs.GetInt ("coins", 0));
 			SceneManager.LoadScene (fase);
 		}
 
