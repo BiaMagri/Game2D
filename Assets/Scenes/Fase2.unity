@@ -50697,7 +50697,7 @@ MonoBehaviour:
     m_Bits: 256
   doorSound: {fileID: 8300000, guid: 08c5bac1d012998439175ef8f206a72d, type: 3}
   audioController: {fileID: 1275369876}
-  fase: Fase3
+  fase: Ex3
   coinCount: {fileID: 415238834}
 --- !u!212 &2057582985
 SpriteRenderer:
